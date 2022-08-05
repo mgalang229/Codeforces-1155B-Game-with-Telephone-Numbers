@@ -16,9 +16,8 @@ void test_cases() {
 		return;
 	}
 	int v_total = (box % 2 ? p_total : p_total + 1);
-	int eight_left = cnt - p_total;
 	int rem = box - p_total - v_total;
-	if ((rem > 1) || (rem == 1 && eight_left > 0)) {
+	if (rem >= 1) {
 		cout << "YES";
 	} else {
 		cout << "NO";
